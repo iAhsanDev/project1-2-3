@@ -1,0 +1,31 @@
+[
+    {
+        "vacc":"Tyhoid",
+        "company":"Novatis",
+        "date":"November 11 2022",
+        "type":"Injectiable",
+        "ctype": "Type01"
+    },
+    {
+        "vacc":"Covid",
+        "company":"Asterzanica",
+        "date":"feb 23 2021",
+        "type":"Injectiable"
+    },{
+        "vacc":"Polio",
+        "company":"GSK",
+        "date":"May 14 2020",
+        "type":"Oral"
+    },{
+        "vacc":"Flu",
+        "company":"GenPharma",
+        "date":"May 11 2020",
+        "type":"Injectiable",
+        "ctype": "Type05"
+    },{
+        "vacc":"Dengue",
+        "company":"Revital",
+        "date":"March 12 2020",
+        "type":"Injectiable"
+    }
+]

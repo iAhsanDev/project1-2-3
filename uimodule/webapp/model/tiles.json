@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Count Down",
+        "route": "first"
+    },
+    {
+        "title": "Covid-19",
+        "route": "second"
+    },
+    {
+        "title": "Vaccination Tracker",
+        "route": "third"
+    }
+]

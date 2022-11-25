@@ -1,0 +1,159 @@
+{
+  "_version": "1.42.0",
+  "sap.app": {
+    "id": "com.ak.projectOne",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap-ux/fiori-freestyle-writer:basic",
+      "version": "0.12.8"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.102.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.ak.projectOne.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "com.ak.projectOne.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteMainView",
+          "pattern": ":?query:",
+          "target": [
+            "TargetMainView"
+          ]
+        },
+        {
+          "name": "first",
+          "pattern": "first",
+          "target": [
+            "Countdown"
+          ]
+        },
+        {
+          "name": "second",
+          "pattern": "second",
+          "target": [
+            "Covid"
+          ]
+        },
+        {
+          "name": "second-list",
+          "pattern": "second-list",
+          "target": [
+            "Covid-list"
+          ]
+        },
+        {
+          "name": "pieView",
+          "pattern": "pieView",
+          "target": [
+            "pie-View"
+          ]
+        },
+        {
+          "name": "third",
+          "pattern": "VaccView",
+          "target": [
+            "Vacc-View"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetMainView": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MainView",
+          "viewName": "MainView"
+        },
+        "Countdown": {
+          "viewType": "XML",
+          "viewId": "Countdown",
+          "viewName": "Countdown"
+        },
+        "Covid": {
+          "viewType": "XML",
+          "viewId": "Covid",
+          "viewName": "Covid"
+        },
+        "Covid-list": {
+          "viewType": "XML",
+          "viewId": "ListView",
+          "viewName": "ListView"
+        }
+        ,
+        "pie-View": {
+          "viewType": "XML",
+          "viewId": "PieView",
+          "viewName": "PieView"
+        },
+        "Vacc-View": {
+          "viewType": "XML",
+          "viewId": "Vacc",
+          "viewName": "Vacc"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.ak.projectOne.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

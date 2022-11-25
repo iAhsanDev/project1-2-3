@@ -1,0 +1,24 @@
+{
+  "generator-template-ui5-project": {
+    "projectname": "projectOne",
+    "namespaceUI5": "com.ak",
+    "enableFPM": false,
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "ui5libs": "Local resources (SAPUI5)",
+    "newdir": false,
+    "codeassist": true,
+    "initrepo": false,
+    "namespaceURI": "com/ak",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}

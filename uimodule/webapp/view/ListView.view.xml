@@ -1,0 +1,49 @@
+<mvc:View controllerName="com.ak.projectOne.controller.ListView" 
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:core="sap.ui.core"
+displayBlock="true" 
+xmlns="sap.m" 
+xmlns:l="sap.ui.layout">
+    <Page id="tiles" title="{i18n>title}">
+        
+ <List
+		growing="true"
+		growingThreshold="10"
+		busyIndicatorDelay="50"
+		enableBusyIndicator="true"
+		noDataText="No products available"
+		items="{Latest>/data/0/regional}">
+		<headerToolbar>
+			<OverflowToolbar>
+				<Title text="Products" level="H2" />
+				<ToolbarSpacer />
+				<Button
+					icon="sap-icon://refresh"
+					press="refreshDataFromBackend" />
+			</OverflowToolbar>
+		</headerToolbar>
+		<StandardListItem
+			title="{Latest>loc}"
+			description="{Latest>totalConfirmed}"
+			icon="{ProductPicUrl}"
+			iconDensityAware="false"
+			iconInset="false" />
+	</List>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <content />
+    </Page>
+</mvc:View>

@@ -1,0 +1,117 @@
+<mvc:View controllerName="com.ak.projectOne.controller.Vacc" 
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:core="sap.ui.core"
+displayBlock="true"
+xmlns:unified="sap.ui.unified" 
+xmlns="sap.m" 
+xmlns:l="sap.ui.layout">
+    <Page id="Vacc" title="Page" class="sapUiContentPadding">
+        <customHeader>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Title text="Vaccination Data" level="H2" />
+                <ToolbarSpacer />
+            </Toolbar>
+        </customHeader>
+        <subHeader>
+            <Toolbar>
+                <ToolbarSpacer />
+                <RadioButtonGroup id="rbg2" columns="2" selectedIndex="2" class="sapUiMediumMarginTop">
+                    <RadioButton groupName="GB" id="RB2-1" text="Table Data" selected="{view>/table}"  />
+                    <RadioButton  groupName="GB" id="RB2-2" text="Calender"  selected="{view>/calendar}" />
+                </RadioButtonGroup>
+                <ToolbarSpacer />
+            </Toolbar>
+        </subHeader>
+
+
+
+			<Table id="idProductsTable"
+		inset="false"
+		items="{VaccModel>/}"
+		visible="{view>/table}">
+
+		<infoToolbar>
+			<OverflowToolbar>
+				<Label text="Vaccination Tracker"/>
+			</OverflowToolbar>
+		</infoToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Vaccination Name" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Company" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Date Given/ To Be Given" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Type of Vaccination" />
+			</Column>
+
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					
+					<Text
+						text="{VaccModel>vacc}" />
+					<Text
+						text="{VaccModel>company}" />
+					<ObjectNumber
+						number="{VaccModel>date}"
+						unit="{WeightUnit}"
+						state="{path:'VaccModel>date' ,formatter: '.formatState'
+						}" />
+					<ObjectNumber
+							number="{VaccModel>type}"
+							 />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
+		<VBox class="sapUiSmallMargin" visible="{view>/calendar}" >
+
+		<SinglePlanningCalendar
+		
+			id="SPC1"
+			
+			title= "My Calendar"
+			viewChange="handleViewChange"			
+			appointments="{path: 'VaccModel>/'}">
+			<actions>
+				<Button id="addNewAppointment" text="Create" press="handleAppointmentCreate" tooltip="Add new appointment" />
+				<Button id="legendButton" icon="sap-icon://legend" press="handleOpenLegend" tooltip="Open SinglePlanningCalendar legend" ariaHasPopup="Dialog" />
+			</actions>
+			<views>
+				<SinglePlanningCalendarDayView key="DayView" title="Day" />
+				<SinglePlanningCalendarWorkWeekView key="WorkWeekView" title="Work Week" />
+				<SinglePlanningCalendarWeekView key="WeekView" title="Week" />
+				<SinglePlanningCalendarMonthView key="MonthView" title="Month" />
+			</views>
+			<appointments>
+				<unified:CalendarAppointment
+					title= "{VaccModel>vacc}"
+					text= "{VaccModel>company}"
+					type="{VaccModel>ctype}"
+					startDate= "{path: 'VaccModel>date', formatter: '.formatDate'}"
+					endDate= "{path: 'VaccModel>date', formatter: '.formatDate'}">
+				</unified:CalendarAppointment>
+			</appointments>
+		</SinglePlanningCalendar>
+	</VBox>
+
+        <content />
+    </Page>
+</mvc:View>

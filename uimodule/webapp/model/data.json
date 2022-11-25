@@ -1,0 +1,223 @@
+{
+    "success": true,
+    "data": [
+        {
+            "day": "2020-03-10",
+            "summary": {
+                "total": 47,
+                "confirmedCasesIndian": 31,
+                "confirmedCasesForeign": 16,
+                "discharged": 0,
+                "deaths": 0,
+                "confirmedButLocationUnidentified": 0
+            },
+            "regional": [
+                {
+                    "loc": "Delhi",
+                    "confirmedCasesIndian": 4,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 4
+                },
+                {
+                    "loc": "Haryana",
+                    "confirmedCasesIndian": 0,
+                    "confirmedCasesForeign": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 14
+                },
+                {
+                    "loc": "Karnataka",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Kerala",
+                    "confirmedCasesIndian": 9,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 9
+                },
+                {
+                    "loc": "Maharashtra",
+                    "confirmedCasesIndian": 2,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 2
+                },
+                {
+                    "loc": "Punjab",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Rajasthan",
+                    "confirmedCasesIndian": 0,
+                    "confirmedCasesForeign": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 2
+                },
+                {
+                    "loc": "Tamil Nadu",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Telengana",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Jammu and Kashmir",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Ladakh",
+                    "confirmedCasesIndian": 2,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 2
+                },
+                {
+                    "loc": "Uttar Pradesh",
+                    "confirmedCasesIndian": 9,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 9
+                }
+            ]
+        },
+        {
+            "day": "2020-03-11",
+            "summary": {
+                "total": 60,
+                "confirmedCasesIndian": 44,
+                "confirmedCasesForeign": 16,
+                "discharged": 0,
+                "deaths": 0,
+                "confirmedButLocationUnidentified": 0
+            },
+            "regional": [
+                {
+                    "loc": "Delhi",
+                    "confirmedCasesIndian": 5,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 5
+                },
+                {
+                    "loc": "Haryana",
+                    "confirmedCasesIndian": 0,
+                    "confirmedCasesForeign": 14,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 14
+                },
+                {
+                    "loc": "Karnataka",
+                    "confirmedCasesIndian": 4,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 4
+                },
+                {
+                    "loc": "Kerala",
+                    "confirmedCasesIndian": 17,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 17
+                },
+                {
+                    "loc": "Maharashtra",
+                    "confirmedCasesIndian": 2,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 2
+                },
+                {
+                    "loc": "Punjab",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Rajasthan",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 2,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 3
+                },
+                {
+                    "loc": "Tamil Nadu",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Telengana",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Jammu and Kashmir",
+                    "confirmedCasesIndian": 1,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 1
+                },
+                {
+                    "loc": "Ladakh",
+                    "confirmedCasesIndian": 2,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 2
+                },
+                {
+                    "loc": "Uttar Pradesh",
+                    "confirmedCasesIndian": 9,
+                    "confirmedCasesForeign": 0,
+                    "discharged": 0,
+                    "deaths": 0,
+                    "totalConfirmed": 9
+                }
+            ]
+        }
+    ]   
+}
